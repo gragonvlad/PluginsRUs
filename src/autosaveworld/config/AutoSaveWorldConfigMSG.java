@@ -26,25 +26,25 @@ import autosaveworld.core.GlobalConstants;
 public class AutoSaveWorldConfigMSG implements Config {
 
 	@ConfigOption(path = "broadcast.pre")
-	public String messageSaveBroadcastPre = "&9AutoSaving";
+	public String messageSaveBroadcastPre = "&9Автосохранение";
 	@ConfigOption(path = "broadcast.post")
-	public String messageSaveBroadcastPost = "&9AutoSave Complete";
+	public String messageSaveBroadcastPost = "&9Автосохранение Успешно";
 	@ConfigOption(path = "broadcastbackup.pre")
-	public String messageBackupBroadcastPre = "&9AutoBackuping";
+	public String messageBackupBroadcastPre = "&9Автобэкап";
 	@ConfigOption(path = "broadcastbackup.post")
-	public String messageBackupBroadcastPost = "&9AutoBackup Complete";
+	public String messageBackupBroadcastPost = "&9Автобэкап успешено";
 	@ConfigOption(path = "broadcastpurge.pre")
-	public String messagePurgeBroadcastPre = "&9AutoPurging";
+	public String messagePurgeBroadcastPre = "&9Автоматическая очистка";
 	@ConfigOption(path = "broadcastpurge.post")
-	public String messagePurgeBroadcastPost = "&9AutoPurge Complete";
+	public String messagePurgeBroadcastPost = "&9Автоматическая очистка успешна";
 	@ConfigOption(path = "autorestart.restarting")
-	public String messageAutoRestart = "&9Server is restarting";
+	public String messageAutoRestart = "&9Сервер перезапускается";
 	@ConfigOption(path = "autorestart.countdown")
-	public String messageAutoRestartCountdown = "&9Server will restart in {SECONDS} seconds";
+	public String messageAutoRestartCountdown = "&9Сервер перезагрузиться через {SECONDS} секунд";
 	@ConfigOption(path = "worldregen.kickmessage")
-	public String messageWorldRegenKick = "&9Server is regenerating map, please come back later";
+	public String messageWorldRegenKick = "&9Сервер пересоздает карту перезайдите позже.";
 	@ConfigOption(path = "insufficentpermissions")
-	public String messageInsufficientPermissions = "&cYou do not have access to that command.";
+	public String messageInsufficientPermissions = "&cУ вас нет доступа к этой комманде.";
 
 	@Override
 	public File getFile() {

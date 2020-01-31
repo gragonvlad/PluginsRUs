@@ -149,11 +149,11 @@ public class AutoSaveWorld extends JavaPlugin {
 	@Override
 	public void onDisable() {
 		if (config.restartOnCrashOnNonAswStop && !StopCommand.isStoppedByAsw()) {
-			MessageLogger.debug("Restarting due to server stopped not by asw command");
+			MessageLogger.debug("Сервер не может выключиться asw коммандой");
 			Runtime.getRuntime().addShutdownHook(new RestartShutdownHook(new File(config.restartOnCrashScriptPath)));
 		}
 		if (config.saveOnASWDisable) {
-			MessageLogger.debug("Saving");
+			MessageLogger.debug("Сохранение");
 			saveThread.performSaveNow();
 		}
 		ConfigLoader.save(config);

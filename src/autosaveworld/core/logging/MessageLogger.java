@@ -109,7 +109,7 @@ public class MessageLogger {
 
 	public static void printOut(String message) {
 		if (AutoSaveWorld.getInstance().getMainConfig().varDebug) {
-			outstream.println("[AutoSaveWorld] "+message);
+			outstream.println("[Автосохранение] "+message);
 			try {
 				FileDescriptor.err.sync();
 			} catch (SyncFailedException e) {
